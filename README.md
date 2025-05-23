@@ -6,7 +6,7 @@ This project presents a comparative study of various machine learning algorithms
 Algorithms Used:
 K-Nearest Neighbors (KNN)
 Support Vector Machine (SVM)
-Random Forest (RF)
+Random Forest (RF) 
 Gradient Boosting (GB)
 Best Accuracy: 96.92% achieved using Gradient Boosting
 
