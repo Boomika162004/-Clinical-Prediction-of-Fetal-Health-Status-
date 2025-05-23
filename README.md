@@ -1,7 +1,5 @@
 Comparative Analysis of ML Algorithms for Fetal Health Prediction
-This project presents a comparative study of various machine learning algorithms to predict fetal health status using Cardiotocogram (CTG) data.
-The objective is to improve early detection of fetal complications and support clinicians in making data-driven decisions.
-
+This project presents a comparative study of various machine learning algorithms to predict fetal health status using Cardiotocogram (CTG) data.The objective is to improve early detection of fetal complications and support clinicians in making data-driven decisions.
 
  Project Overview:
  Objective: Classify fetal health into Normal, Suspect, or Pathological categories using CTG data.
