@@ -7,7 +7,7 @@ Algorithms Used:
 K-Nearest Neighbors (KNN)
 Support Vector Machine (SVM)
 Random Forest (RF)
-Gradient Boosting (GB)
+Gradient Boosting (GB) 
 Best Accuracy: 96.92% achieved using Gradient Boosting
 
 Dataset:
