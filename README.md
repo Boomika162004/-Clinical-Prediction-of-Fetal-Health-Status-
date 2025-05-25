@@ -3,7 +3,6 @@ This project presents a comparative study of multiple machine learning algorithm
 We implemented and evaluated four algorithms: K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Random Forest (RF), and Gradient Boosting (GB). Among these, Gradient Boosting achieved the best performance with an accuracy of 96.92%.
 
  Dataset:
-
 The dataset used for this study was sourced from Kaggle and contains 2,113 records. It includes a variety of physiological features such as baseline fetal heart rate (FHR), accelerations, fetal movements, uterine contractions, and others. These features provide critical indicators of fetal well-being and were used to train and evaluate the machine learning models.
 
 
