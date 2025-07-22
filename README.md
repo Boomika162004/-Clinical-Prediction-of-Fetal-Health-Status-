@@ -1,14 +1,83 @@
-This project presents a comparative study of multiple machine learning algorithms to predict fetal health status using Cardiotocogram (CTG) data. The objective is to enhance early detection of fetal complications and support clinicians in making data-driven decisions. The classification task involves predicting fetal health as Normal, Suspect, or Pathological based on physiological features such as fetal heart rate, accelerations, movements, and uterine contractions.
+# 🧠 Fetal Health Prediction Using Machine Learning
 
-We implemented and evaluated four algorithms: K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Random Forest (RF), and Gradient Boosting (GB). Among these, Gradient Boosting achieved the best performance with an accuracy of 96.92%.
+This project aims to predict fetal health conditions using machine learning models applied to Cardiotocogram (CTG) data. By leveraging physiological signals, this model can assist healthcare professionals in early detection of fetal abnormalities, thus improving maternal and fetal outcomes.
 
- Dataset:
-The dataset used for this study was sourced from Kaggle and contains 2,113 records. It includes a variety of physiological features such as baseline fetal heart rate (FHR), accelerations, fetal movements, uterine contractions, and others. These features provide critical indicators of fetal well-being and were used to train and evaluate the machine learning models.
+---
 
+## 📌 Objective
 
-Methodology:
-The project followed a structured machine learning pipeline beginning with data cleaning and preprocessing to ensure the quality and consistency of the dataset. This was followed by exploratory data analysis (EDA) to uncover patterns, correlations, and distributions within the features. To enhance model performance, feature selection was performed using the SelectKBest method, identifying the most relevant attributes for classification. The selected features were then used to train multiple models, with hyperparameter tuning applied to optimize their performance. Finally, the models were evaluated using key performance metrics, including accuracy, precision, recall, and F1-score, to ensure a comprehensive comparison of their predictive capabilities.
+To classify fetal health into one of the following categories:
+- **Normal**
+- **Suspect**
+- **Pathological**
 
+This classification is based on several physiological parameters such as:
+- Fetal Heart Rate (FHR)
+- Accelerations
+- Movements
+- Uterine Contractions
+- Variability indices
 
-Results:
-Gradient Boosting outperformed all other models with the highest testing accuracy and minimal error margin. Proper handling of class imbalance and careful tuning of model parameters significantly contributed to improved performance.
+---
+
+## 📊 Dataset
+
+- **Source**: [Kaggle - Fetal Health Classification](https://www.kaggle.com/datasets/andrewmvd/fetal-health-classification)
+- **Records**: 2,113
+- **Features**: 21 numerical indicators related to fetal heart rate and uterine contraction patterns
+- **Target**: `fetal_health` (0 = Normal, 1 = Suspect, 2 = Pathological)
+
+---
+
+## 🧪 Methodology
+
+1. **Data Preprocessing**  
+   - Checked for missing values  
+   - Standardized features for uniform scaling  
+
+2. **Exploratory Data Analysis (EDA)**  
+   - Correlation heatmap  
+   - Feature distributions  
+   - Class imbalance analysis  
+
+3. **Feature Selection**  
+   - Used `SelectKBest` for extracting top-performing features  
+
+4. **Model Building & Evaluation**  
+   Trained the following models:
+   - K-Nearest Neighbors (KNN)
+   - Support Vector Machine (SVM)
+   - Random Forest (RF)
+   - Gradient Boosting (GB)
+
+5. **Model Tuning**  
+   - Applied hyperparameter optimization using GridSearchCV  
+   - Evaluated using:
+     - Accuracy
+     - Precision
+     - Recall
+     - F1-Score
+
+---
+
+## 🏆 Results
+
+| Model             | Accuracy (%) |
+|------------------|---------------|
+| KNN              | **92.67**     |
+| SVM              | **95.50**     |
+| Random Forest    | **96.69**     |
+| Gradient Boosting | **96.92**    |
+
+> **Gradient Boosting** performed the best overall with excellent precision and recall values across all classes.
+
+---
+
+## 🧰 Technologies Used
+
+- **Language**: Python
+- **Libraries**:
+  - `pandas`, `numpy`, `matplotlib`, `seaborn`
+  - `scikit-learn` for ML algorithms and evaluation
+
+---
